@@ -1,0 +1,26 @@
+<div class="container">
+  <h2 class="text-center">Avercast Infotech Pvt.Ltd Employee Details Information</h2>
+  <div>
+    <button [routerLink]="['/dashboard']" type="button" class="btn btn-primary">Back</button>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Employee Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of OtherInstructionsArray;let i = index;">
+        <td scope="row">{{item.id}}</td>
+        <td>{{item.employee_name}}</td>
+        <td>{{item.employee_age}}</td>
+        <td>{{item.employee_salary}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
